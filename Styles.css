@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1),rgba(0,0,0,0.2)),url(Img/bg.avif);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.178);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#display {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,1,2),rgba(0,0,0,0)),url(Img/watch\ bg.jfif);
+    background-size: cover;
+    background-position: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: rgb(247, 243, 243);
+    padding: 15px 30px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#pauseBtn, #resumeBtn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#stopBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#lapBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+}
+
+#lapsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lapsList li {
+    font-size: 18px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
